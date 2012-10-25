@@ -10,4 +10,9 @@
 
 @interface driver : baseGolfClub
 
+//adding a new data member for the driver
+/*The wind is assumed to be traveling in the opposite direction
+of the ball's flight, therefore the more == less distance */
+@property int windSpeed;
+
 @end
