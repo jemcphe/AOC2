@@ -10,4 +10,6 @@
 
 @interface pitchWedge : baseGolfClub
 
+@property int solidContact;
+
 @end
