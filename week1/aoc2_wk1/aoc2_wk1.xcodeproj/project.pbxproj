@@ -1,0 +1,330 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		47911AFA1638F41800B27816 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47911AF91638F41800B27816 /* UIKit.framework */; };
+		47911AFC1638F41800B27816 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47911AFB1638F41800B27816 /* Foundation.framework */; };
+		47911AFE1638F41800B27816 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47911AFD1638F41800B27816 /* CoreGraphics.framework */; };
+		47911B041638F41800B27816 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 47911B021638F41800B27816 /* InfoPlist.strings */; };
+		47911B061638F41800B27816 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 47911B051638F41800B27816 /* main.m */; };
+		47911B0A1638F41800B27816 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 47911B091638F41800B27816 /* AppDelegate.m */; };
+		47911B0D1638F41800B27816 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47911B0C1638F41800B27816 /* ViewController.m */; };
+		47911B101638F41900B27816 /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47911B0E1638F41900B27816 /* ViewController_iPhone.xib */; };
+		47911B131638F41900B27816 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47911B111638F41900B27816 /* ViewController_iPad.xib */; };
+		47911B1B1638F4F600B27816 /* golfClubFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 47911B1A1638F4F600B27816 /* golfClubFactory.m */; };
+		47911B1E1638F57300B27816 /* baseGolfClub.m in Sources */ = {isa = PBXBuildFile; fileRef = 47911B1D1638F57300B27816 /* baseGolfClub.m */; };
+		47911B211638F5B400B27816 /* driver.m in Sources */ = {isa = PBXBuildFile; fileRef = 47911B201638F5B400B27816 /* driver.m */; };
+		47911B241638F5C600B27816 /* fiveIron.m in Sources */ = {isa = PBXBuildFile; fileRef = 47911B231638F5C600B27816 /* fiveIron.m */; };
+		47911B271638F5D300B27816 /* pitchWedge.m in Sources */ = {isa = PBXBuildFile; fileRef = 47911B261638F5D300B27816 /* pitchWedge.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		47911AF51638F41800B27816 /* aoc2_wk1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = aoc2_wk1.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		47911AF91638F41800B27816 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		47911AFB1638F41800B27816 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		47911AFD1638F41800B27816 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		47911B011638F41800B27816 /* aoc2_wk1-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "aoc2_wk1-Info.plist"; sourceTree = "<group>"; };
+		47911B031638F41800B27816 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		47911B051638F41800B27816 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		47911B071638F41800B27816 /* aoc2_wk1-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "aoc2_wk1-Prefix.pch"; sourceTree = "<group>"; };
+		47911B081638F41800B27816 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		47911B091638F41800B27816 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		47911B0B1638F41800B27816 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		47911B0C1638F41800B27816 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		47911B0F1638F41900B27816 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
+		47911B121638F41900B27816 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
+		47911B191638F4F600B27816 /* golfClubFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = golfClubFactory.h; sourceTree = "<group>"; };
+		47911B1A1638F4F600B27816 /* golfClubFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = golfClubFactory.m; sourceTree = "<group>"; };
+		47911B1C1638F57300B27816 /* baseGolfClub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = baseGolfClub.h; sourceTree = "<group>"; };
+		47911B1D1638F57300B27816 /* baseGolfClub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = baseGolfClub.m; sourceTree = "<group>"; };
+		47911B1F1638F5B400B27816 /* driver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = driver.h; sourceTree = "<group>"; };
+		47911B201638F5B400B27816 /* driver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = driver.m; sourceTree = "<group>"; };
+		47911B221638F5C600B27816 /* fiveIron.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fiveIron.h; sourceTree = "<group>"; };
+		47911B231638F5C600B27816 /* fiveIron.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = fiveIron.m; sourceTree = "<group>"; };
+		47911B251638F5D300B27816 /* pitchWedge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pitchWedge.h; sourceTree = "<group>"; };
+		47911B261638F5D300B27816 /* pitchWedge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = pitchWedge.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		47911AF21638F41800B27816 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47911AFA1638F41800B27816 /* UIKit.framework in Frameworks */,
+				47911AFC1638F41800B27816 /* Foundation.framework in Frameworks */,
+				47911AFE1638F41800B27816 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		47911AEA1638F41800B27816 = {
+			isa = PBXGroup;
+			children = (
+				47911AFF1638F41800B27816 /* aoc2_wk1 */,
+				47911AF81638F41800B27816 /* Frameworks */,
+				47911AF61638F41800B27816 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		47911AF61638F41800B27816 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				47911AF51638F41800B27816 /* aoc2_wk1.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		47911AF81638F41800B27816 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				47911AF91638F41800B27816 /* UIKit.framework */,
+				47911AFB1638F41800B27816 /* Foundation.framework */,
+				47911AFD1638F41800B27816 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		47911AFF1638F41800B27816 /* aoc2_wk1 */ = {
+			isa = PBXGroup;
+			children = (
+				47911B081638F41800B27816 /* AppDelegate.h */,
+				47911B091638F41800B27816 /* AppDelegate.m */,
+				47911B0B1638F41800B27816 /* ViewController.h */,
+				47911B0C1638F41800B27816 /* ViewController.m */,
+				47911B0E1638F41900B27816 /* ViewController_iPhone.xib */,
+				47911B111638F41900B27816 /* ViewController_iPad.xib */,
+				47911B001638F41800B27816 /* Supporting Files */,
+				47911B191638F4F600B27816 /* golfClubFactory.h */,
+				47911B1A1638F4F600B27816 /* golfClubFactory.m */,
+				47911B1C1638F57300B27816 /* baseGolfClub.h */,
+				47911B1D1638F57300B27816 /* baseGolfClub.m */,
+				47911B1F1638F5B400B27816 /* driver.h */,
+				47911B201638F5B400B27816 /* driver.m */,
+				47911B221638F5C600B27816 /* fiveIron.h */,
+				47911B231638F5C600B27816 /* fiveIron.m */,
+				47911B251638F5D300B27816 /* pitchWedge.h */,
+				47911B261638F5D300B27816 /* pitchWedge.m */,
+			);
+			path = aoc2_wk1;
+			sourceTree = "<group>";
+		};
+		47911B001638F41800B27816 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				47911B011638F41800B27816 /* aoc2_wk1-Info.plist */,
+				47911B021638F41800B27816 /* InfoPlist.strings */,
+				47911B051638F41800B27816 /* main.m */,
+				47911B071638F41800B27816 /* aoc2_wk1-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		47911AF41638F41800B27816 /* aoc2_wk1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 47911B161638F41900B27816 /* Build configuration list for PBXNativeTarget "aoc2_wk1" */;
+			buildPhases = (
+				47911AF11638F41800B27816 /* Sources */,
+				47911AF21638F41800B27816 /* Frameworks */,
+				47911AF31638F41800B27816 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = aoc2_wk1;
+			productName = aoc2_wk1;
+			productReference = 47911AF51638F41800B27816 /* aoc2_wk1.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		47911AEC1638F41800B27816 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "James McPherson";
+			};
+			buildConfigurationList = 47911AEF1638F41800B27816 /* Build configuration list for PBXProject "aoc2_wk1" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 47911AEA1638F41800B27816;
+			productRefGroup = 47911AF61638F41800B27816 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				47911AF41638F41800B27816 /* aoc2_wk1 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		47911AF31638F41800B27816 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47911B041638F41800B27816 /* InfoPlist.strings in Resources */,
+				47911B101638F41900B27816 /* ViewController_iPhone.xib in Resources */,
+				47911B131638F41900B27816 /* ViewController_iPad.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		47911AF11638F41800B27816 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47911B061638F41800B27816 /* main.m in Sources */,
+				47911B0A1638F41800B27816 /* AppDelegate.m in Sources */,
+				47911B0D1638F41800B27816 /* ViewController.m in Sources */,
+				47911B1B1638F4F600B27816 /* golfClubFactory.m in Sources */,
+				47911B1E1638F57300B27816 /* baseGolfClub.m in Sources */,
+				47911B211638F5B400B27816 /* driver.m in Sources */,
+				47911B241638F5C600B27816 /* fiveIron.m in Sources */,
+				47911B271638F5D300B27816 /* pitchWedge.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		47911B021638F41800B27816 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				47911B031638F41800B27816 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		47911B0E1638F41900B27816 /* ViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				47911B0F1638F41900B27816 /* en */,
+			);
+			name = ViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		47911B111638F41900B27816 /* ViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				47911B121638F41900B27816 /* en */,
+			);
+			name = ViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		47911B141638F41900B27816 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		47911B151638F41900B27816 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		47911B171638F41900B27816 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "aoc2_wk1/aoc2_wk1-Prefix.pch";
+				INFOPLIST_FILE = "aoc2_wk1/aoc2_wk1-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		47911B181638F41900B27816 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "aoc2_wk1/aoc2_wk1-Prefix.pch";
+				INFOPLIST_FILE = "aoc2_wk1/aoc2_wk1-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		47911AEF1638F41800B27816 /* Build configuration list for PBXProject "aoc2_wk1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47911B141638F41900B27816 /* Debug */,
+				47911B151638F41900B27816 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		47911B161638F41900B27816 /* Build configuration list for PBXNativeTarget "aoc2_wk1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47911B171638F41900B27816 /* Debug */,
+				47911B181638F41900B27816 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 47911AEC1638F41800B27816 /* Project object */;
+}
