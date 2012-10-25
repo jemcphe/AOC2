@@ -9,5 +9,28 @@
 #import <Foundation/Foundation.h>
 
 @interface baseGolfClub : NSObject
+{
+    // declaring clubTypeEnum as an integer
+    int clubTypeEnum;
+}
+
+// defining clubTypeEnum... these are the golf clubs that are used for this program
+typedef enum {
+    DRIVER = 0,
+    FIVEIRON,
+    PITCHWEDGE
+} clubTypeEnum;
+
+// data members
+@property int swingSpeed;
+@property NSString* golfBall;
+
+/************ Methods *************/
+
+//initialize
+-(id) init;
+
+//calculation/manipulation method to determine distance of golf ball traveled with selected club
+-(void)calculateBallDistance;
 
 @end
