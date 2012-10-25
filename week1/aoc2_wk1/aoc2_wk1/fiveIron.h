@@ -10,4 +10,6 @@
 
 @interface fiveIron : baseGolfClub
 
+@property int temperature;
+
 @end

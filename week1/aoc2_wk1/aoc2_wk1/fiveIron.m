@@ -10,4 +10,41 @@
 
 @implementation fiveIron
 
+//synthesizing new data member
+@synthesize temperature;
+
+//establishing init for custom data member values
+-(id) init
+{
+    self = [super init];
+    if (self != nil) {
+        [self setYardsTraveled:210];
+        [self setTemperature:0];
+        [self setGolfBall: @"Nike 20XI"];
+        [self setSwingSpeed:105];
+    }
+    return self;
+};
+
+//calculation/manipulation method to determine distance of golf ball traveled with selected club
+-(void)calculateBallDistance
+{
+    // check for temperature entered and set yardage effects accordingly.
+    if (temperature >= 100) {
+        [self setYardsTraveled: self.yardsTraveled + 10];
+    }
+    else if (temperature >= 80 && temperature < 100){
+        [self setYardsTraveled: self.yardsTraveled + 5];
+    }
+    else if (temperature >= 60 && temperature < 80){
+        [self setYardsTraveled: self.yardsTraveled];
+    }
+    else if (temperature < 60){
+        [self setYardsTraveled: self.yardsTraveled - 10];
+    }
+    
+    
+    NSLog(@"Golf Club: 5 Iron Golf Ball: %@ Temperature: %i Yards Traveled: %i", self.golfBall, temperature, self.yardsTraveled);
+}
+
 @end
