@@ -23,6 +23,7 @@ typedef enum {
 
 // data members
 @property int swingSpeed;
+@property int yardsTraveled;
 @property NSString* golfBall;
 
 /************ Methods *************/
