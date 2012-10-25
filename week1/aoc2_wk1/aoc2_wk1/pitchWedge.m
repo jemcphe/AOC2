@@ -29,6 +29,8 @@
 //calculation/manipulation method to determine distance of golf ball traveled with selected club
 -(void)calculateBallDistance
 {
+    //solidContact ranges 1-10... 10 == 140... 10 yards are deducted for poor contact..
+    //ex. if solidContact == 7 ; yardage == 110
     if (solidContact <= 10 && solidContact >=1) {
         [self setYardsTraveled: (solidContact * 10) +40];
     }

@@ -16,6 +16,15 @@
 
 - (void)viewDidLoad
 {
+    //Create Driver golf club
+    driver* myDriver = (driver*) [golfClubFactory createNewGolfClub:DRIVER];
+    [myDriver setWindSpeed:40];
+    
+    if (myDriver != nil) {
+        [myDriver calculateBallDistance];
+    }
+    
+    
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }

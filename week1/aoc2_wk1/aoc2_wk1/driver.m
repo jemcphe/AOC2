@@ -29,8 +29,8 @@
 //calculation/manipulation method to determine distance of golf ball traveled with selected club
 -(void)calculateBallDistance
 {
-    [self setYardsTraveled:(windSpeed - (windSpeed/2))];
-    NSLog(@"Golf Club: Driver Golf Ball: %@ Wind: %i Yards Traveled: %i", self.golfBall, windSpeed, self.yardsTraveled);
+    [self setYardsTraveled: self.yardsTraveled - (windSpeed - (windSpeed/2))];
+    NSLog(@"Golf Club: Driver\n Golf Ball: %@\n Wind: %imph\n Yards Traveled: %iyds", self.golfBall, windSpeed, self.yardsTraveled);
 }
 
 @end
