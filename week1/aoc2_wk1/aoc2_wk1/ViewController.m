@@ -100,7 +100,7 @@
     pitchWedgeTestLabel = [[UILabel alloc] initWithFrame:CGRectMake(10.0f, 355.0f, 300.0f, 100.0f)];
     if (pitchWedgeTestLabel != nil) {
         pitchWedgeTestLabel.backgroundColor = [UIColor colorWithRed:0.98 green:0.812 blue:0.412 alpha:1]; /*#facf69*/
-        pitchWedgeTestLabel.text = [NSString stringWithFormat: @" Golf Club: Pitching Wedge\n Golf Ball: %@\n Contact (1-10): %i\n Yards Traveled: %i", [myPitchWedge golfBall], [myPitchWedge solidContact],
+        pitchWedgeTestLabel.text = [NSString stringWithFormat: @" Golf Club: Pitching Wedge\n Golf Ball: %@\n Contact (1-10): %i\n Yards Traveled: %iyds", [myPitchWedge golfBall], [myPitchWedge solidContact],
                                     [myPitchWedge yardsTraveled]];
         pitchWedgeTestLabel.textColor = [UIColor blackColor];
         pitchWedgeTestLabel.textAlignment = UITextAlignmentLeft;

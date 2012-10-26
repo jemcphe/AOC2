@@ -29,6 +29,7 @@
 //calculation/manipulation method to determine distance of golf ball traveled with selected club
 -(void)calculateBallDistance
 {
+    // this shows the effect of windspeed on the ball distance... For every 10 miles of wind, the ball loses 5 yards of distance.
     [self setYardsTraveled: self.yardsTraveled - (windSpeed - (windSpeed/2))];
     NSLog(@"Golf Club: Driver\n Golf Ball: %@\n Wind: %imph\n Yards Traveled: %iyds", self.golfBall, windSpeed, self.yardsTraveled);
 }

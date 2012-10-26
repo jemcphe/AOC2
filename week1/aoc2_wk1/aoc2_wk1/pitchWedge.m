@@ -34,7 +34,7 @@
     if (solidContact <= 10 && solidContact >=1) {
         [self setYardsTraveled: (solidContact * 10) +40];
     }
-    NSLog(@"Golf Club: Pitching Wedge\n Golf Ball: %@\n Contact (1-10): %i\n Yards Traveled: %i", self.golfBall, solidContact, self.yardsTraveled);
+    NSLog(@"Golf Club: Pitching Wedge\n Golf Ball: %@\n Contact (1-10): %i\n Yards Traveled: %iyds", self.golfBall, solidContact, self.yardsTraveled);
 }
 
 @end
