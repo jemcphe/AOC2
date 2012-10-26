@@ -44,7 +44,7 @@
     }
     
     
-    NSLog(@"Golf Club: 5 Iron Golf Ball: %@ Temperature: %i Yards Traveled: %i", self.golfBall, temperature, self.yardsTraveled);
+    NSLog(@"Golf Club: 5 Iron\n Golf Ball: %@\n Temperature: %i Yards\n Traveled: %iyds", self.golfBall, temperature, self.yardsTraveled);
 }
 
 @end

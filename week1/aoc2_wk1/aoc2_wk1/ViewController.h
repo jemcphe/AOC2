@@ -10,5 +10,14 @@
 #import "golfClubFactory.h"
 
 @interface ViewController : UIViewController
+{
+    UILabel* driverLabel;
+    UILabel* driverTestLabel;
+    UILabel* fiveIronLabel;
+    UILabel* fiveIronTestLabel;
+    UILabel* pitchWedgeLabel;
+    UILabel* pitchWedgeTestLabel;
+    
+}
 
 @end
