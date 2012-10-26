@@ -24,23 +24,23 @@
     
     //Create Driver golf club
     driver* myDriver = (driver*) [golfClubFactory createNewGolfClub:DRIVER];
-    [myDriver setWindSpeed:40];
-    
+    [myDriver setWindSpeed:10];
+    // check for existence of myDriver
     if (myDriver != nil) {
         [myDriver calculateBallDistance];
     }
     
     //Create fiveIron golf club
     fiveIron* myFiveIron = (fiveIron*) [golfClubFactory createNewGolfClub:FIVEIRON];
-    [myFiveIron setTemperature:55];
-    
+    [myFiveIron setTemperature:90];
+    // check for existence of myFiveIron
     if (myFiveIron != nil) {
         [myFiveIron calculateBallDistance];
     }
     
     //Create pitchWedge golf Club
     pitchWedge* myPitchWedge = (pitchWedge*) [golfClubFactory createNewGolfClub:PITCHWEDGE];
-    [myPitchWedge setSolidContact:10];
+    [myPitchWedge setSolidContact:8];
     
     //check for pitchWedge creation
     if (myPitchWedge != nil) {
