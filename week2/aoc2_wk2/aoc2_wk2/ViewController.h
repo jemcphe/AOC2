@@ -29,6 +29,8 @@
     IBOutlet UIButton* nine;
 }
 
+-(void)disableButtons;
+
 -(IBAction)onClick:(id)sender;
 -(IBAction)onClear:(id)sender;
 -(IBAction)onSwitch:(id)sender;
