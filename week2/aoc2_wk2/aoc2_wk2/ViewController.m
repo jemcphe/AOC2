@@ -35,4 +35,29 @@
     }
 }
 
+-(IBAction)onClick:(id)sender
+{
+    //set buttonValue equal to 0... this will help when placing more than one number into textField
+    
+    UIButton *numberButton = (UIButton*) sender;
+    if (numberButton != nil) {
+        buttonValue = buttonValue * 10 + (int) numberButton.tag;
+        calcWindow.text = [[NSString alloc] initWithFormat:@"%d", buttonValue];
+        if (calcWindow.text.length == 10) {
+            zero.enabled = NO;
+            one.enabled = NO;
+            two.enabled = NO;
+            three.enabled = NO;
+            four.enabled = NO;
+            five.enabled = NO;
+            six.enabled = NO;
+            seven.enabled = NO;
+            eight.enabled = NO;
+            nine.enabled = NO;
+            NSLog(@"Calculation Window limit has been reached.");
+        }
+    }
+    
+}
+
 @end
