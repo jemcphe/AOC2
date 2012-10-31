@@ -10,4 +10,6 @@
 
 @interface infoPanelViewController : UIViewController
 
+-(IBAction)onBack:(id)sender;
+
 @end

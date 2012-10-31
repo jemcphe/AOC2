@@ -156,10 +156,11 @@
     buttonValue = 0;
     calcWindow.text = [[NSString alloc] initWithFormat:@"%d", result];
 }
-
+//This will allow user to change color of background
 -(IBAction)onColorChange:(id)sender
 {
     colorControl = (UISegmentedControl*) sender;
+    // check for existence of color change segments
     if (colorControl != nil) {
         int colorIndex = colorControl.selectedSegmentIndex;
         if (colorIndex == 0) {
@@ -171,6 +172,15 @@
         else if (colorIndex == 2) {
             self.view.backgroundColor = [UIColor redColor];
         }
+    }
+}
+
+//When info button is pressed, modal view will pop up to show developer name
+-(IBAction)onInfoButton:(id)sender
+{
+    infoPanelViewController* infoPanel = [[infoPanelViewController alloc] initWithNibName:@"infoPanelViewController" bundle:nil];
+    if (infoPanel != nil) {
+        [self presentModalViewController:infoPanel animated:TRUE];
     }
 }
 

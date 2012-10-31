@@ -41,4 +41,13 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
+//Function to go back to Calculator
+-(IBAction)onBack:(id)sender
+{
+    UIButton* backButton = (UIButton*) sender;
+    if (backButton != nil) {
+        [self dismissModalViewControllerAnimated:TRUE];
+    }
+}
+
 @end

@@ -39,5 +39,6 @@
 -(IBAction)onSwitch:(id)sender;
 -(IBAction)onSum:(id)sender;
 -(IBAction)onColorChange:(id)sender;
+-(IBAction)onInfoButton:(id)sender;
 
 @end
