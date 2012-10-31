@@ -34,11 +34,10 @@
     IBOutlet UISegmentedControl* colorControl;
 }
 
--(void)disableButtons;
-
 -(IBAction)onClick:(id)sender;
 -(IBAction)onClear:(id)sender;
 -(IBAction)onSwitch:(id)sender;
 -(IBAction)onSum:(id)sender;
+-(IBAction)onColorChange:(id)sender;
 
 @end

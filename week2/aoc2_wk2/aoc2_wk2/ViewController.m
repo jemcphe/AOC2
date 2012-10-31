@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "infoPanelViewController.h"
 
 @interface ViewController ()
 
@@ -154,6 +155,23 @@
     }
     buttonValue = 0;
     calcWindow.text = [[NSString alloc] initWithFormat:@"%d", result];
+}
+
+-(IBAction)onColorChange:(id)sender
+{
+    colorControl = (UISegmentedControl*) sender;
+    if (colorControl != nil) {
+        int colorIndex = colorControl.selectedSegmentIndex;
+        if (colorIndex == 0) {
+            self.view.backgroundColor = [UIColor blueColor];
+        }
+        else if (colorIndex == 1) {
+            self.view.backgroundColor = [UIColor orangeColor];
+        }
+        else if (colorIndex == 2) {
+            self.view.backgroundColor = [UIColor redColor];
+        }
+    }
 }
 
 @end
