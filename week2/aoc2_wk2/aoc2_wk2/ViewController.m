@@ -164,13 +164,16 @@
     if (colorControl != nil) {
         int colorIndex = colorControl.selectedSegmentIndex;
         if (colorIndex == 0) {
-            self.view.backgroundColor = [UIColor blueColor];
+            self.view.backgroundColor = [UIColor whiteColor];
+            colorLabel.textColor = [UIColor blackColor];
         }
         else if (colorIndex == 1) {
-            self.view.backgroundColor = [UIColor orangeColor];
+            self.view.backgroundColor = [UIColor blueColor];
+            colorLabel.textColor = [UIColor whiteColor];
         }
         else if (colorIndex == 2) {
-            self.view.backgroundColor = [UIColor redColor];
+            self.view.backgroundColor = [UIColor greenColor];
+            colorLabel.textColor = [UIColor blackColor];
         }
     }
 }

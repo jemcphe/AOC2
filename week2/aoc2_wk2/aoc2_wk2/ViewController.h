@@ -32,6 +32,8 @@
     IBOutlet UIButton* clear;
     IBOutlet UIButton* infoButton;
     IBOutlet UISegmentedControl* colorControl;
+    
+    IBOutlet UILabel* colorLabel;
 }
 
 -(IBAction)onClick:(id)sender;
