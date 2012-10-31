@@ -18,7 +18,7 @@
 		47911B69164081AC00B27816 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47911B67164081AC00B27816 /* ViewController_iPad.xib */; };
 		47911B74164082E400B27816 /* infoPanelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47911B72164082E400B27816 /* infoPanelViewController.m */; };
 		47911B75164082E400B27816 /* infoPanelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47911B73164082E400B27816 /* infoPanelViewController.xib */; };
-		47911B7B1640D72400B27816 /* james_Halloween.png in Resources */ = {isa = PBXBuildFile; fileRef = 47911B7A1640D72400B27816 /* james_Halloween.png */; };
+		47FD6F3E1640E45B00941A5A /* james_halloween.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 47FD6F3D1640E45B00941A5A /* james_halloween.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,7 +39,7 @@
 		47911B71164082E400B27816 /* infoPanelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = infoPanelViewController.h; sourceTree = "<group>"; };
 		47911B72164082E400B27816 /* infoPanelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = infoPanelViewController.m; sourceTree = "<group>"; };
 		47911B73164082E400B27816 /* infoPanelViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = infoPanelViewController.xib; sourceTree = "<group>"; };
-		47911B7A1640D72400B27816 /* james_Halloween.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = james_Halloween.png; path = ../../../../Pictures/james_Halloween.png; sourceTree = "<group>"; };
+		47FD6F3D1640E45B00941A5A /* james_halloween.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = james_halloween.jpg; path = ../../../../Desktop/FullSail/images/james_halloween.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +86,7 @@
 		47911B55164081AC00B27816 /* aoc2_wk2 */ = {
 			isa = PBXGroup;
 			children = (
-				47911B7A1640D72400B27816 /* james_Halloween.png */,
+				47FD6F3D1640E45B00941A5A /* james_halloween.jpg */,
 				47911B5E164081AC00B27816 /* AppDelegate.h */,
 				47911B5F164081AC00B27816 /* AppDelegate.m */,
 				47911B61164081AC00B27816 /* ViewController.h */,
@@ -167,7 +167,7 @@
 				47911B66164081AC00B27816 /* ViewController_iPhone.xib in Resources */,
 				47911B69164081AC00B27816 /* ViewController_iPad.xib in Resources */,
 				47911B75164082E400B27816 /* infoPanelViewController.xib in Resources */,
-				47911B7B1640D72400B27816 /* james_Halloween.png in Resources */,
+				47FD6F3E1640E45B00941A5A /* james_halloween.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +307,7 @@
 				47911B6E164081AC00B27816 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
