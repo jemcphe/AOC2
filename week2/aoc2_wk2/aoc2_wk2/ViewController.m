@@ -39,7 +39,49 @@
     }
 }
 
-
+-(IBAction)onSwitch:(id)sender
+{
+    UISwitch* switched = (UISwitch*) sender;
+    if (switched != nil) {
+        if (switched.on == TRUE) {
+            zero.enabled = YES;
+            one.enabled = YES;
+            two.enabled = YES;
+            three.enabled = YES;
+            four.enabled = YES;
+            five.enabled = YES;
+            six.enabled = YES;
+            seven.enabled = YES;
+            eight.enabled = YES;
+            nine.enabled = YES;
+            plusSign.enabled = YES;
+            equalSign.enabled = YES;
+            infoButton.enabled = YES;
+            clear.enabled = YES;
+            calcWindow.enabled = YES;
+            colorControl.enabled = YES;
+        }
+        else if (switched.on == FALSE) {
+            zero.enabled = NO;
+            one.enabled = NO;
+            two.enabled = NO;
+            three.enabled = NO;
+            four.enabled = NO;
+            five.enabled = NO;
+            six.enabled = NO;
+            seven.enabled = NO;
+            eight.enabled = NO;
+            nine.enabled = NO;
+            plusSign.enabled = NO;
+            equalSign.enabled = NO;
+            infoButton.enabled = NO;
+            clear.enabled = NO;
+            calcWindow.enabled = NO;
+            colorControl.enabled = NO;
+        }
+    }
+    
+}
 
 //When any of the numbers 0-9 are selected, this will fire.
 -(IBAction)onClick:(id)sender
@@ -83,6 +125,18 @@
 
 -(IBAction)onSum:(id)sender
 {
+    // this will enable all numbers in case 9 values were entered previously
+    zero.enabled = YES;
+    one.enabled = YES;
+    two.enabled = YES;
+    three.enabled = YES;
+    four.enabled = YES;
+    five.enabled = YES;
+    six.enabled = YES;
+    seven.enabled = YES;
+    eight.enabled = YES;
+    nine.enabled = YES;
+    
     //create sum sender
     UIButton* sum = (UIButton*) sender;
     //check for existence of senders

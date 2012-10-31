@@ -16,7 +16,7 @@
     IBOutlet UISwitch * enableCalc;
     IBOutlet UITextField * calcWindow;
     
-    //IBOutlet for number buttons
+    //IBOutlet for number buttons, operands, and colorControl
     IBOutlet UIButton* zero;
     IBOutlet UIButton* one;
     IBOutlet UIButton* two;
@@ -27,6 +27,11 @@
     IBOutlet UIButton* seven;
     IBOutlet UIButton* eight;
     IBOutlet UIButton* nine;
+    IBOutlet UIButton* plusSign;
+    IBOutlet UIButton* equalSign;
+    IBOutlet UIButton* clear;
+    IBOutlet UIButton* infoButton;
+    IBOutlet UISegmentedControl* colorControl;
 }
 
 -(void)disableButtons;
