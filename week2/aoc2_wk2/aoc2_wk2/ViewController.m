@@ -16,6 +16,10 @@
 
 - (void)viewDidLoad
 {
+    //set buttonValue equal to 0... this will help when placing more than one number into textField
+    buttonValue = 0;
+    //display 0 as the default int in calcWindow
+    calcWindow.text = [[NSString alloc] initWithFormat:@"%d", buttonValue];
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
@@ -37,10 +41,12 @@
 
 -(IBAction)onClick:(id)sender
 {
-    //set buttonValue equal to 0... this will help when placing more than one number into textField
+    
+    
     
     UIButton *numberButton = (UIButton*) sender;
     if (numberButton != nil) {
+        
         buttonValue = buttonValue * 10 + (int) numberButton.tag;
         calcWindow.text = [[NSString alloc] initWithFormat:@"%d", buttonValue];
         if (calcWindow.text.length == 10) {
@@ -58,6 +64,15 @@
         }
     }
     
+}
+
+-(IBAction)onClear:(id)sender
+{
+    UIButton* clearButton = (UIButton*) sender;
+    if (clearButton != nil) {
+        buttonValue = 0;
+        calcWindow.text = [[NSString alloc] initWithFormat:@"%d", buttonValue];
+    }
 }
 
 @end
