@@ -8,12 +8,25 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AddEventViewController : UIViewController
+@protocol eventDataDelegate <NSObject>
+
+@required
+-(void)didClose:(NSString*) eventString;
+
+@end
+
+@interface AddEventViewController : UIViewController <UITextFieldDelegate>
 {
+    //delegate declaration
+    id<eventDataDelegate> delegate;
+    
+    //IBOutlet declaration
     IBOutlet UIButton* saveButton;
     IBOutlet UIButton* closeKeyboard;
     IBOutlet UITextField* eventText;
 }
+
+@property (strong) id<eventDataDelegate> delegate;
 
 -(IBAction)onSaveButton:(id)sender;
 -(IBAction)onCloseKeyboard:(id)sender;

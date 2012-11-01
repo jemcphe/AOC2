@@ -14,14 +14,28 @@
 
 @implementation AddEventViewController
 
+@synthesize delegate;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
+        delegate = nil;
         // Custom initialization
     }
     return self;
 }
+
+//- (BOOL)textFieldShouldReturn:(UITextField *)textField
+//{
+//    if (delegate != nil) {
+//        [delegate didClose:eventText.text];
+//    }
+//    
+//    [self dismissModalViewControllerAnimated:TRUE];
+//    
+//    return TRUE;
+//}
 
 - (void)viewDidLoad
 {
@@ -39,6 +53,20 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+-(IBAction)onSaveButton:(id)sender
+{
+    if (delegate != nil) {
+        NSLog(@"delegate is fo real");
+        [delegate didClose:eventText.text];
+        [self dismissModalViewControllerAnimated:TRUE];
+    }
+}
+
+-(IBAction)onCloseKeyboard:(id)sender
+{
+    [eventText resignFirstResponder];
 }
 
 @end

@@ -7,11 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AddEventViewController.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <eventDataDelegate>
 {
     IBOutlet UIButton* addEventButton;
-    IBOutlet UITextView* eventText;
+    IBOutlet UITextView* eventTextView;
 }
 
 -(IBAction)onAddEvent:(id)sender;

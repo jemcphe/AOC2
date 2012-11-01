@@ -40,8 +40,14 @@
 {
     AddEventViewController* addEvent = [[AddEventViewController alloc] initWithNibName:@"AddEventViewController" bundle:nil];
     if (addEvent != nil) {
+        addEvent.delegate = self;
         [self presentModalViewController:addEvent animated:TRUE];
     }
+}
+
+-(void)didClose:(NSString *)eventString
+{
+    eventTextView.text = eventString;
 }
 
 @end
