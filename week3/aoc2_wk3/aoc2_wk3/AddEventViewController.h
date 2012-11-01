@@ -9,5 +9,13 @@
 #import <UIKit/UIKit.h>
 
 @interface AddEventViewController : UIViewController
+{
+    IBOutlet UIButton* saveButton;
+    IBOutlet UIButton* closeKeyboard;
+    IBOutlet UITextField* eventText;
+}
+
+-(IBAction)onSaveButton:(id)sender;
+-(IBAction)onCloseKeyboard:(id)sender;
 
 @end
