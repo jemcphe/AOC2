@@ -111,7 +111,6 @@
             NSLog(@"Calculation Window limit has been reached.");
         }
     }
-    
 }
 
 // When CLEAR button is pressed, the calcWindow will be reset back to 0.
