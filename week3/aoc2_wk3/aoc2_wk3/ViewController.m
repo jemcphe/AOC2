@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "AddEventViewController.h"
 
 @interface ViewController ()
 
@@ -32,6 +33,14 @@
         return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
     } else {
         return YES;
+    }
+}
+
+-(IBAction)onAddEvent:(id)sender
+{
+    AddEventViewController* addEvent = [[AddEventViewController alloc] initWithNibName:@"AddEventViewController" bundle:nil];
+    if (addEvent != nil) {
+        [self presentModalViewController:addEvent animated:TRUE];
     }
 }
 
