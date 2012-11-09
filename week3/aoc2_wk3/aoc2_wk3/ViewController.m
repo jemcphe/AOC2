@@ -36,6 +36,7 @@
     }
 }
 
+// When Add Event Button is pressed AddEventViewController is made visible.
 -(IBAction)onAddEvent:(id)sender
 {
     AddEventViewController* addEvent = [[AddEventViewController alloc] initWithNibName:@"AddEventViewController" bundle:nil];
@@ -45,6 +46,8 @@
     }
 }
 
+//function from delegate... when save button from AddEventViewController is pressed, the text
+//gathered from datepicker and textfield will be displayed in textView
 -(void)didClose:(NSString *)eventString
 {
     eventTextView.text = eventString;

@@ -11,7 +11,7 @@
 @protocol eventDataDelegate <NSObject>
 
 @required
--(void)didClose:(NSString*) eventString;
+-(void)didClose:(NSString*)eventString;
 
 @end
 
@@ -24,10 +24,20 @@
     IBOutlet UIButton* saveButton;
     IBOutlet UIButton* closeKeyboard;
     IBOutlet UITextField* eventText;
+    IBOutlet UIDatePicker* pickDate;
+    
+    //declare date object
+    NSDate* minimumDate;
+    NSDate* currentDate;
+    NSDate* eventDate;
+    NSDateFormatter* formatter;
+    NSString* dateMsg;
+    NSString* dateString;
 }
 
 @property (strong) id<eventDataDelegate> delegate;
 
+-(IBAction)onDatePick:(id)sender;
 -(IBAction)onSaveButton:(id)sender;
 -(IBAction)onCloseKeyboard:(id)sender;
 

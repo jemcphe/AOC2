@@ -74,9 +74,13 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA</b
 							</object>
 						</object>
 						<object class="NSDate" key="IBUIDate">
-							<double key="NS.time">373429472.495601</double>
+							<double key="NS.time">370837472.495601</double>
+						</object>
+						<object class="NSDate" key="IBUIMinimumDate">
+							<double key="NS.time">-978267600</double>
 						</object>
 						<int key="IBUIMinuteInterval">1</int>
+						<bool key="IBUIHasMinimumDate">YES</bool>
 					</object>
 					<object class="IBUIButton" id="364881221">
 						<reference key="NSNextResponder" ref="191373211"/>
@@ -267,6 +271,23 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA</b
 					<int key="connectionID">12</int>
 				</object>
 				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">pickDate</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="1066215404"/>
+					</object>
+					<int key="connectionID">16</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">onDatePick:</string>
+						<reference key="source" ref="1066215404"/>
+						<reference key="destination" ref="372490531"/>
+						<int key="IBEventType">13</int>
+					</object>
+					<int key="connectionID">19</int>
+				</object>
+				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
 						<string key="label">onSaveButton:</string>
 						<reference key="source" ref="364881221"/>
@@ -375,7 +396,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA</b
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">15</int>
+			<int key="maxID">19</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -384,11 +405,16 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA</b
 					<string key="superclassName">UIViewController</string>
 					<dictionary class="NSMutableDictionary" key="actions">
 						<string key="onCloseKeyboard:">id</string>
+						<string key="onDatePick:">id</string>
 						<string key="onSaveButton:">id</string>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="actionInfosByName">
 						<object class="IBActionInfo" key="onCloseKeyboard:">
 							<string key="name">onCloseKeyboard:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="onDatePick:">
+							<string key="name">onDatePick:</string>
 							<string key="candidateClassName">id</string>
 						</object>
 						<object class="IBActionInfo" key="onSaveButton:">
@@ -399,6 +425,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA</b
 					<dictionary class="NSMutableDictionary" key="outlets">
 						<string key="closeKeyboard">UIButton</string>
 						<string key="eventText">UITextField</string>
+						<string key="pickDate">UIDatePicker</string>
 						<string key="saveButton">UIButton</string>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
@@ -409,6 +436,10 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA</b
 						<object class="IBToOneOutletInfo" key="eventText">
 							<string key="name">eventText</string>
 							<string key="candidateClassName">UITextField</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="pickDate">
+							<string key="name">pickDate</string>
+							<string key="candidateClassName">UIDatePicker</string>
 						</object>
 						<object class="IBToOneOutletInfo" key="saveButton">
 							<string key="name">saveButton</string>

@@ -11,6 +11,7 @@
 
 @interface ViewController : UIViewController <eventDataDelegate>
 {
+    // IBOutlets
     IBOutlet UIButton* addEventButton;
     IBOutlet UITextView* eventTextView;
 }
