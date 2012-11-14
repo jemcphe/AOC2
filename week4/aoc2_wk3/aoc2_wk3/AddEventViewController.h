@@ -24,6 +24,7 @@
     IBOutlet UIButton* closeKeyboard;
     IBOutlet UITextField* eventText;
     IBOutlet UIDatePicker* pickDate;
+    IBOutlet UILabel* closeLabel;
     
     //Gesture Recognizers
     UISwipeGestureRecognizer* leftSwiper;
@@ -41,5 +42,6 @@
 
 -(IBAction)onDatePick:(id)sender;
 -(IBAction)onCloseKeyboard:(id)sender;
+-(void)onSwipe:(UISwipeGestureRecognizer*)recognizer;
 
 @end

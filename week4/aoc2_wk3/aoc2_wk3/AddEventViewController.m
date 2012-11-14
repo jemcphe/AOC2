@@ -41,6 +41,13 @@
     //Once datapicker has loaded, this will keep minimum date to the current date.
     pickDate.minimumDate = pickDate.date;
     
+    //swipe right to go back to home screen to view input from user.
+    leftSwiper = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(onSwipe:)];
+    leftSwiper.direction = UISwipeGestureRecognizerDirectionLeft;
+    
+    //add swipe gesture to closeLabel
+    [closeLabel addGestureRecognizer:leftSwiper];
+    
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
 }
@@ -89,6 +96,17 @@
 -(IBAction)onCloseKeyboard:(id)sender
 {
     [eventText resignFirstResponder];
+}
+
+//function for swipe gesture... when user slides left, it will close modal view
+-(void)onSwipe:(UISwipeGestureRecognizer *)recognizer
+{
+    if (recognizer.direction == UISwipeGestureRecognizerDirectionLeft) {
+        if (delegate != nil) {
+            [delegate didClose:[[NSString alloc] initWithFormat:@"New Event: %@\n%@", eventText.text, dateMsg]];
+            [self dismissModalViewControllerAnimated:TRUE];
+        }
+    }
 }
 
 @end
