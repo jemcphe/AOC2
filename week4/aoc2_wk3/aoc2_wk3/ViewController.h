@@ -14,6 +14,8 @@
     // IBOutlets
     IBOutlet UILabel* addEventLabel;
     IBOutlet UITextView* eventTextView;
+    IBOutlet UIButton* saveButton;
+    
     
     //Gesture Recognizers
     UISwipeGestureRecognizer* rightSwiper;
@@ -22,5 +24,6 @@
 
 //-(IBAction)onAddEvent:(id)sender;
 -(void)onSwipe:(UISwipeGestureRecognizer*)recognizer;
+-(IBAction)onSave:(id)sender;
 
 @end

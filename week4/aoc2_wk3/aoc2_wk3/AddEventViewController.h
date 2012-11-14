@@ -21,10 +21,12 @@
     id<eventDataDelegate> delegate;
     
     //IBOutlet declaration
-    IBOutlet UIButton* saveButton;
     IBOutlet UIButton* closeKeyboard;
     IBOutlet UITextField* eventText;
     IBOutlet UIDatePicker* pickDate;
+    
+    //Gesture Recognizers
+    UISwipeGestureRecognizer* leftSwiper;
     
     //declare date object
     NSDate* minimumDate;
@@ -38,7 +40,6 @@
 @property (strong) id<eventDataDelegate> delegate;
 
 -(IBAction)onDatePick:(id)sender;
--(IBAction)onSaveButton:(id)sender;
 -(IBAction)onCloseKeyboard:(id)sender;
 
 @end
