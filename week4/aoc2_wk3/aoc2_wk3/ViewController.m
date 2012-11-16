@@ -24,6 +24,17 @@
     //Add gesture to label
     [addEventLabel addGestureRecognizer:rightSwiper];
     
+    
+    //Add Default Data to screen... Saved Data
+    NSUserDefaults* defaults = [NSUserDefaults standardUserDefaults];
+    
+    if (defaults != nil) {
+        NSString* eventText = [defaults objectForKey:@"event"];
+        
+        //display default text on screen
+        eventTextView.text = eventText;
+    }
+    
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
@@ -63,7 +74,15 @@
 
 -(IBAction)onSave:(id)sender
 {
-    //Save Button Stuff
+    //Use NSUserDefaults to save the text information
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    if (defaults != nil) {
+        NSString* eventText = eventTextView.text;
+        [defaults setObject:eventText forKey:@"event"];
+        
+        //Synchronize defaults... this will be responsible for saving the Data.
+        [defaults synchronize];
+    }
 }
 
 @end
