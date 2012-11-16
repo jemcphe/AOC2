@@ -87,21 +87,30 @@
 
 -(IBAction)onSave:(id)sender
 {
-    //Use NSUserDefaults to save the text information
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    if (defaults != nil) {
-        NSString* eventText = eventTextView.text;
-        [defaults setObject:eventText forKey:@"event"];
+    if (eventTextView.text.length == 0) {
+        UIAlertView* emptySaveAlert = [[UIAlertView alloc] initWithTitle:@"Save Attempt" message:@"You Have No Events To Save" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
         
-        //Synchronize defaults... this will be responsible for saving the Data.
-        [defaults synchronize];
+        //show onSaveAlert
+        [emptySaveAlert show];
+    }
+    else {
+        //Use NSUserDefaults to save the text information
+        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+        if (defaults != nil) {
+            NSString* eventText = eventTextView.text;
+            [defaults setObject:eventText forKey:@"event"];
+            
+            //Synchronize defaults... this will be responsible for saving the Data.
+            [defaults synchronize];
+        }
+        
+        //Alert the User that the info was saved
+        UIAlertView* onSaveAlert = [[UIAlertView alloc] initWithTitle:@"Saved" message:@"Your Events Were Saved Successfully" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        
+        //show onSaveAlert
+        [onSaveAlert show];
     }
     
-    //Alert the User that the info was saved
-    UIAlertView* onSaveAlert = [[UIAlertView alloc] initWithTitle:@"Saved" message:@"Your Events Were Saved Successfully" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
-    
-    //show onSaveAlert
-    [onSaveAlert show];
 }
 
 @end
