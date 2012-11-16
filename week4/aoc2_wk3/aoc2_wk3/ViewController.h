@@ -16,6 +16,8 @@
     IBOutlet UITextView* eventTextView;
     IBOutlet UIButton* saveButton;
     
+    //NSString for text
+    NSString* myEventString;
     
     //Gesture Recognizers
     UISwipeGestureRecognizer* rightSwiper;

@@ -70,7 +70,13 @@
 //gathered from datepicker and textfield will be displayed in textView
 -(void)didClose:(NSString *)eventString
 {
-    eventTextView.text = eventString;
+    if (myEventString != nil) {
+        myEventString = [myEventString stringByAppendingString:eventString];
+    }
+    else {
+        myEventString = [[NSString alloc] initWithFormat: @"%@", eventString];
+    }
+    eventTextView.text = myEventString;
 }
 
 -(IBAction)onSave:(id)sender

@@ -81,17 +81,6 @@
     }
 }
 
-//onSaveButton function... When clicked delegate will be called and collect data from UIDatePicker and UITextField
-//then dismiss the AddEventViewController.
--(IBAction)onSaveButton:(id)sender
-{
-    if (delegate != nil) {
-        [delegate didClose:[[NSString alloc] initWithFormat:@"New Event: %@\n%@ \n \n", eventText.text, dateMsg]];
-        [self dismissModalViewControllerAnimated:TRUE];
-    }
-    
-}
-
 //function to close keyboard when Close Keyboard Button is pressed. 
 -(IBAction)onCloseKeyboard:(id)sender
 {
@@ -116,7 +105,7 @@
         }
         else if (delegate != nil) {
             //format eventString properly for displaying in textView on front page.
-            eventString = [[NSString alloc] initWithFormat:@"New Event: %@\n%@", eventText.text, dateMsg];
+            eventString = [[NSString alloc] initWithFormat:@"New Event: %@ \n%@ \n \n", eventText.text, dateMsg];
             
             //initiate custom delegate
             [delegate didClose:eventString];
