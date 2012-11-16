@@ -86,7 +86,7 @@
 -(IBAction)onSaveButton:(id)sender
 {
     if (delegate != nil) {
-        [delegate didClose:[[NSString alloc] initWithFormat:@"New Event: %@\n%@", eventText.text, dateMsg]];
+        [delegate didClose:[[NSString alloc] initWithFormat:@"New Event: %@\n%@ \n \n", eventText.text, dateMsg]];
         [self dismissModalViewControllerAnimated:TRUE];
     }
     
@@ -102,8 +102,26 @@
 -(void)onSwipe:(UISwipeGestureRecognizer *)recognizer
 {
     if (recognizer.direction == UISwipeGestureRecognizerDirectionLeft) {
-        if (delegate != nil) {
-            [delegate didClose:[[NSString alloc] initWithFormat:@"New Event: %@\n%@", eventText.text, dateMsg]];
+        if (eventText.text.length == 0) {
+            UIAlertView* noTextAlert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Please Enter An Event" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+            
+            //show noTextAlert
+            [noTextAlert show];
+        }
+        else if (dateString == NULL){
+            UIAlertView* noDateAlert = [[UIAlertView alloc] initWithTitle:@"Date Error" message:@"Please Select A Date and Time" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+            
+            //show noDateAlert
+            [noDateAlert show];
+        }
+        else if (delegate != nil) {
+            //format eventString properly for displaying in textView on front page.
+            eventString = [[NSString alloc] initWithFormat:@"New Event: %@\n%@", eventText.text, dateMsg];
+            
+            //initiate custom delegate
+            [delegate didClose:eventString];
+            
+            //make modal view disappear from view
             [self dismissModalViewControllerAnimated:TRUE];
         }
     }

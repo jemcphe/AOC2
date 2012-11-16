@@ -28,6 +28,7 @@
     //Add Default Data to screen... Saved Data
     NSUserDefaults* defaults = [NSUserDefaults standardUserDefaults];
     
+    //Checks for NSUserDefaults existence
     if (defaults != nil) {
         NSString* eventText = [defaults objectForKey:@"event"];
         

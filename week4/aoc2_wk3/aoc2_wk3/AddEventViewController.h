@@ -29,6 +29,9 @@
     //Gesture Recognizers
     UISwipeGestureRecognizer* leftSwiper;
     
+    //NSString for event
+    NSString* eventString;
+    
     //declare date object
     NSDate* minimumDate;
     NSDate* currentDate;
