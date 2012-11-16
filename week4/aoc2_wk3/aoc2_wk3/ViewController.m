@@ -30,10 +30,10 @@
     
     //Checks for NSUserDefaults existence
     if (defaults != nil) {
-        NSString* eventText = [defaults objectForKey:@"event"];
+        myEventString = [defaults objectForKey:@"event"];
         
         //display default text on screen
-        eventTextView.text = eventText;
+        eventTextView.text = myEventString;
     }
     
     [super viewDidLoad];
@@ -70,12 +70,18 @@
 //gathered from datepicker and textfield will be displayed in textView
 -(void)didClose:(NSString *)eventString
 {
+    //Check wether there is text or not entered in text field
     if (myEventString != nil) {
+        
+        //if there is currently text in the eventTextView, append the next Event below current text
         myEventString = [myEventString stringByAppendingString:eventString];
     }
     else {
+        
+        //if there is no previous data, begin with this event
         myEventString = [[NSString alloc] initWithFormat: @"%@", eventString];
     }
+    //set eventTextView.text equal to myEventString
     eventTextView.text = myEventString;
 }
 
@@ -90,6 +96,12 @@
         //Synchronize defaults... this will be responsible for saving the Data.
         [defaults synchronize];
     }
+    
+    //Alert the User that the info was saved
+    UIAlertView* onSaveAlert = [[UIAlertView alloc] initWithTitle:@"Saved" message:@"Your Events Were Saved Successfully" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    
+    //show onSaveAlert
+    [onSaveAlert show];
 }
 
 @end
